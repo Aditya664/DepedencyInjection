@@ -21,9 +21,17 @@
 
 ### Dependency Injection Using Property injection in C#
 
-    Di Using Property injection
+
 
     * Dependency Injection is basically providing the objects that an object needs, instead of having * it construct the objects themselves.
     * Setter or property injection is injecting dependent class object through the property.
     * So setter or property injection means, injecting SavingAccount & CurrentAccount class objects in 
-    * Account class using property
+    * Account class using propert
+
+### Dependency Injection Using METHOD injection in c#
+
+
+    * Method Injection is injecting dependent class object through a class method.
+    * What is mean by this?
+    * In the given example, Account class has a dependency on SavingAccount and CurrentAccount classes.
+    * So the method Injection means, injecting SavingAccount & CurrentAccount class objects directly * into the Account class method using interface.
