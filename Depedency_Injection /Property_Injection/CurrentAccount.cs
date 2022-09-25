@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace DepedencyInjection.Depedency_Injection .Property_Injection
 {
-    public class CurrentAccount
+    public class CurrentAccount : IAccount
     {
-        
+        public void PrintDetails(){
+            Console.WriteLine("Details of Saving account");
+        }
     }
 }

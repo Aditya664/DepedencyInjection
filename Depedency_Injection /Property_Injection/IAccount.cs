@@ -7,6 +7,6 @@ namespace DepedencyInjection.Depedency_Injection .Property_Injection
 {
     public interface IAccount
     {
-        
+        void PrintDetails();
     }
 }
