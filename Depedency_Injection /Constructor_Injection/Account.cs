@@ -18,14 +18,14 @@ namespace DepedencyInjection.Depedency_Injection.Constructor_Injection
         {
             _account.PrintDetails();
         }
-        static void Main()
-        {
-            IAccount ca = new CurrentAccount();
-            IAccount sa = new SavingAccount();
-            Account account1 = new Account(ca);
-            Account account2 = new Account(ca);
-            account1.PrintAccount();
-            account2.PrintAccount();
-        }
+        // static void Main()
+        // {
+        //     IAccount ca = new CurrentAccount();
+        //     IAccount sa = new SavingAccount();
+        //     Account account1 = new Account(ca);
+        //     Account account2 = new Account(ca);
+        //     account1.PrintAccount();
+        //     account2.PrintAccount();
+        // }
     }
 }

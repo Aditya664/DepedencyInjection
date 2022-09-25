@@ -12,17 +12,17 @@ namespace DepedencyInjection.Depedency_Injection .Property_Injection
             account.PrintDetails();
         }
 
-        static void Main(){
+        // static void Main(){
             
-            Account sa = new Account();
-            sa.account = new SavingAccount();
-            sa.PrintAccount();
+        //     Account sa = new Account();
+        //     sa.account = new SavingAccount();
+        //     sa.PrintAccount();
 
-            Account ca = new Account();
-            ca.account = new CurrentAccount();
-            ca.PrintAccount();
+        //     Account ca = new Account();
+        //     ca.account = new CurrentAccount();
+        //     ca.PrintAccount();
 
-            Console.ReadLine();
-        }
+        //     Console.ReadLine();
+        // }
     }
 }
