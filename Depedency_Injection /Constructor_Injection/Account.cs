@@ -7,17 +7,25 @@ namespace DepedencyInjection.Depedency_Injection.Constructor_Injection
 {
     public class Account
     {
-        CurrentAccount CurrentAccount = new CurrentAccount();
-        SavingAccount savingAccount = new SavingAccount();  
 
-        public void PrintAccount(){
-            CurrentAccount.PrintDetails();
-            savingAccount.PrintDetails();
+        private IAccount _account;
+        public Account(IAccount account)
+        { // Parameterized Constructor
+            this._account = account;
         }
 
-        static void Main(){
-            Account account = new Account();
-            account.PrintAccount();
+        public void PrintAccount()
+        {
+            _account.PrintDetails();
+        }
+        static void Main()
+        {
+            IAccount ca = new CurrentAccount();
+            IAccount sa = new SavingAccount();
+            Account account1 = new Account(ca);
+            Account account2 = new Account(ca);
+            account1.PrintAccount();
+            account2.PrintAccount();
         }
     }
 }

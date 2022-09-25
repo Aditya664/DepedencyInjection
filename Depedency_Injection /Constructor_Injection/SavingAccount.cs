@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DepedencyInjection.Depedency_Injection.Constructor_Injection
 {
-    public class SavingAccount
+    public class SavingAccount : IAccount
     {
         public void PrintDetails(){
             Console.WriteLine("Details of Saving account");

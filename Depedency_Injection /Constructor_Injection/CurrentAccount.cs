@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DepedencyInjection.Depedency_Injection.Constructor_Injection
 {
-    public class CurrentAccount
+    public class CurrentAccount : IAccount
     {
         public void PrintDetails(){
             Console.WriteLine("Details of Current account");
