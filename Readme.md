@@ -9,6 +9,8 @@
     * A loosely-coupled code is a code where all your classes can work independently without relying on each other.`
 
 ### Types of Depedency Injection 
-1) Constructor Injection
-2) Setter or Property Injection
-3) Method Injection
+
+
+    * 1) Constructor Injection
+    * 2) Setter or Property Injection
+    * 3) Method Injection
